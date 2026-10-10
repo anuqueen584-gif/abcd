@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.gcontainer {
+    background-color: burlywood;
+    height: 600px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'
+    
+    ;
+ 
+}
+.g-item {
+    background-color: tomato;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#grid1{
+    grid-area: header;
+}
+#grid2{
+    grid-area: menu;
+}
+#grid3{
+    grid-area: main;
+}
+#grid4{
+    grid-area: right;
+}
+#grid5{
+    grid-area: footer;
+}
+    </style>
+</head>
+<body>
+        <div class="gcontainer">
+        <div class="g-item" id="grid1">Header</div>
+        <div class="g-item" id="grid2">Menu</div>
+        <div class="g-item" id="grid3">Main</div>
+        <div class="g-item" id="grid4">Right</div>
+        <div class="g-item" id="grid5">Footer</div>
+     
+    </div>
+</body>
+</html>
